@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna votação</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">   <!--  ==>div titulo<==  -->
+        
+       
+    <div class="container">
+
+        <div class="tela" id="tela">
+            <!---
+            
+            <h1 class="titulocandidato">Candidato</h1> 
+            <p type="text" class="nomecandidatoo" id="nomecandidato">Nome Candidato</p>
+
+            -->
+
+            <table border="solid 1px" class="tabelatela">
+        
+                <tr>
+                    <th>Alessandra Custódio</th>
+                  <td class="td" id="1">0</td>
+                  
+                </tr>
+                <tr>
+                <th>Ana Menani</th>
+                  <td class="td" id="2">0</td>
+                  
+                </tr>
+                <tr>
+                    <th>Anna Marcos</th>
+                    <td class="td" id="3">0</td>
+                   
+                  </tr>
+                <tr>
+                    <th>Elaine Silva</th>
+                    <td class="td" id="4">0</td>
+                    
+                  </tr>
+                <tr>
+                    <th>Fabio Pantoni</th>
+                    <td class="td" id="5">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Fabio Pereira</th>
+                    <td id="6">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Fabiola Rodrigues</th>
+                    <td id="7">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Fernanda Machado</th>
+                    <td id="8">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Jean Ananias</th>
+                    <td id="9">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Jefferson Felix</th>
+                    <td id="10">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Lidiane Lunardelo</th>
+                    <td id="11">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Tania Sawasaki</th>
+                    <td id="12">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th> Thiago  </th>
+                    <td id="13">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th> Vinicius Furquim</th>
+                    <td id="14">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th> Isabela Oliveira</th>
+                    <td id="15">0</td>
+                    
+                  </tr>
+                  <tr>
+                    <th> Maria de Lourdes</th>
+                    <td id="16">0</td>
+                    
+                  </tr>
+
+                  
+
+            </table>
+            <div class="block" id="block">
+              <h1></h1>
+            </div>
+            
+           
+         </div>
+
+        <div class="second-collum">           
+
+            <div class="content">
+
+                
+                <h1>Urna Eletrônica</h1>
+
+                <div class="screen">    <!--  // ==>div tela do display<==//  -->
+                    <input  autocomplete="off" type="" class="screen_input nome" id="nome" placeholder="Digite o nome"></input>
+                    <p type="text" class="screen_input" id="voto"></p>
+
+                    
+                    
+                </div>
+
+                <div class="butons">                 
+
+                    <button class="bt btn-1" onclick="minhaFuncao('1')" >1</button>
+                    <button class="bt btn-2" onclick="minhaFuncao('2')" >2</button>
+                    <button class="bt btn-3" onclick="minhaFuncao('3')" >3</button>
+                   
+                    <button class="bt btn-4" onclick="minhaFuncao('4')" >4</button>
+                    <button class="bt btn-5" onclick="minhaFuncao('5')" >5</button>
+                    <button class="bt btn-6" onclick="minhaFuncao('6')" >6</button>
+                    
+                    <button class="bt btn-7" onclick="minhaFuncao('7')" >7</button>
+                    <button class="bt btn-8" onclick="minhaFuncao('8')" >8</button>
+                    <button class="bt btn-9" onclick="minhaFuncao('9')" >9</button>
+                   
+                    
+                    <button type="submit" class="bt btn-sub" id="btt1" onclick="votar()">Confirmar</button>
+                    <button class="bt btn-0" onclick="minhaFuncao('0')" >0</button>
+                    <button class="bt btn-Limpar" onclick="clean()" >Limpar</button>
+                   
+                </div>
+
+            </div>
+
+        </div>   
+       
+    </div>
+
+    <div class="container2">
+        <div class="listanomes">
+
+          <button class="bttabela" id="btTable" onclick="reload()">Resetar votos</button>
+          <button class="bttabela" id="resultado" onclick="resultado()">Resultado</button>
+
+            <table class="tabelalistarnomes" id=""  border="solid 1px">
+                
+
+                    
+                     <thead>
+                        <tr >
+                          <th>Lista de Eleitores</th>                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td" id="listanome"> </td>                          
+                        </tr>
+                        
+                      </tbody>
+                
+               
+            </table>
+        </div>
+
+    </div>
+
+</div>
+        
+
+
+       
+      
+    <script src="script.js"></script>
+
+   
+</body>
+</html>
